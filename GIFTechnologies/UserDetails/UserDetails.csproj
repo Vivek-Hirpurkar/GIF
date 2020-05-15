@@ -155,6 +155,7 @@
     <Compile Include="Models\ParentStudent.cs" />
     <Compile Include="Models\SchoolClass.cs" />
     <Compile Include="Models\StudentClass.cs" />
+    <Compile Include="Models\StudentDBHelper.cs" />
     <Compile Include="Models\StudentDetails.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserType.cs" />
