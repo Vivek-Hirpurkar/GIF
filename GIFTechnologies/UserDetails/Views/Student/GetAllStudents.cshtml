@@ -1,0 +1,84 @@
+﻿@model IEnumerable<UserDetails.Models.StudentDetails>
+
+@{
+    ViewBag.Title = "GetAllStudents";
+}
+
+<h2>GetAllStudents</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentMobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentMobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+    </tr>
+}
+
+</table>
